@@ -28,7 +28,6 @@ public class TestBase {
 	
 	
 	@BeforeClass
-
 	@Parameters({ "browser" })
 
 	public void commonSetUp(String browser) throws IOException {
@@ -44,8 +43,6 @@ public class TestBase {
 		log.debug("open the application url :" + rb.getString("appUrl"));
 
 		driver.get(rb.getString("appUrl"));
-
-
 
 	}
 
